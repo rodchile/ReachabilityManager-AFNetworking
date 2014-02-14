@@ -30,10 +30,10 @@
 #import <netdb.h>
 
 typedef enum {
-    AFNetworkReachabilityStatusUnknown          = -1,
-    AFNetworkReachabilityStatusNotReachable     = 0,
-    AFNetworkReachabilityStatusReachableViaWWAN = 1,
-    AFNetworkReachabilityStatusReachableViaWiFi = 2,
+    AFNetworkReachabilityStatusReachabilityUnknown          = -1,
+    AFNetworkReachabilityStatusReachabilityNotReachable     = 0,
+    AFNetworkReachabilityStatusReachabilityReachableViaWWAN = 1,
+    AFNetworkReachabilityStatusReachabilityReachableViaWiFi = 2,
 } AFNetworkReachabilityStatusReachability;
 
 /**
