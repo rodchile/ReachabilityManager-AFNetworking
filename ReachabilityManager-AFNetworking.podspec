@@ -1,3 +1,4 @@
+Pod::Spec.new do |s|
   s.name     = 'ReachabilityManager-AFNetworking'
   s.version  = '0.0.1'
   s.license  = 'Apache'
@@ -13,3 +14,4 @@
 
   s.osx.deployment_target = '10.7'
   s.osx.frameworks = 'CoreServices', 'SystemConfiguration', 'Security'
+end
