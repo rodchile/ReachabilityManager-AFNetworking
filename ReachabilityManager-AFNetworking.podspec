@@ -1,4 +1,4 @@
-s.name     = 'ReachabilityManager-AFNetworking'
+  s.name     = 'ReachabilityManager-AFNetworking'
   s.version  = '0.0.1'
   s.license  = 'Apache'
   s.summary  = 'A ReachabilityManager for AFNetworking 1.X.'
@@ -13,5 +13,3 @@ s.name     = 'ReachabilityManager-AFNetworking'
 
   s.osx.deployment_target = '10.7'
   s.osx.frameworks = 'CoreServices', 'SystemConfiguration', 'Security'
-
-  s.prefix_header_contents = <<-EOS
