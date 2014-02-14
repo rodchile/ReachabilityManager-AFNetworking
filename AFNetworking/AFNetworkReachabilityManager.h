@@ -131,7 +131,7 @@ typedef enum {
 
  @param block A block object to be executed when the network availability of the `baseURL` host changes.. This block has no return value and takes a single argument which represents the various reachability states from the device to the `baseURL`.
  */
-- (void)setReachabilityStatusChangeBlock:(void (^)(AFNetworkReachabilityStatus status))block;
+- (void)setReachabilityStatusChangeBlock:(void (^)(AFNetworkReachabilityStatusReachability status))block;
 
 @end
 
