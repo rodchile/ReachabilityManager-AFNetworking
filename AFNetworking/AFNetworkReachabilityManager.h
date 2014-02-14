@@ -29,6 +29,13 @@
 #import <ifaddrs.h>
 #import <netdb.h>
 
+typedef enum {
+    AFNetworkReachabilityStatusUnknown          = -1,
+    AFNetworkReachabilityStatusNotReachable     = 0,
+    AFNetworkReachabilityStatusReachableViaWWAN = 1,
+    AFNetworkReachabilityStatusReachableViaWiFi = 2,
+} AFNetworkReachabilityStatusReachability;
+
 /**
  `AFNetworkReachabilityManager` monitors the reachability of domains, and addresses for both WWAN and WiFi network interfaces.
  
@@ -39,7 +46,7 @@
 /**
  The current network reachability status.
  */
-@property (readonly, nonatomic, assign) AFNetworkReachabilityStatus networkReachabilityStatus;
+@property (readonly, nonatomic, assign) AFNetworkReachabilityStatusReachability networkReachabilityStatus;
 
 /**
  Whether or not the network is currently reachable.
@@ -185,4 +192,4 @@ extern NSString * const AFNetworkingReachabilityNotificationStatusItemSk;
 /**
  Returns a localized string representation of an `AFNetworkReachabilityStatus` value.
  */
-extern NSString * AFStringFromNetworkReachabilityStatus(AFNetworkReachabilityStatus status);
+extern NSString * AFStringFromNetworkReachabilityStatus(AFNetworkReachabilityStatusReachability status);
